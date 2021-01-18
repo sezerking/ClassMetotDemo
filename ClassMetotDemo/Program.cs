@@ -36,13 +36,15 @@ namespace ClassMetotDemo
 
             Customer[] customers = new Customer[] { customer1, customer2, customer3, customer4 };
 
-            Console.WriteLine("-----------------------------Musteri Bilgileri----------------------------");
+            Console.WriteLine("-----------------------------Musteriler----------------------------");
 
             CustomerManager customerManager = new CustomerManager();
             customerManager.CustomerList(customer1);
             customerManager.CustomerList(customer2);
-            customerManager.CustomerList(customer3);
-            customerManager.CustomerList(customer4);
+            
+            customerManager.Exterminate(customer3);
+
+            customerManager.Add(customer4);
         }
     }
 }
